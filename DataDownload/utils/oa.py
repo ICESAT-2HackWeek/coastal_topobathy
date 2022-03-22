@@ -1,5 +1,5 @@
 ############
-Written by hackweek organizers. not Eli
+# Written by hackweek organizers. not Eli
 ############
 
 import os
