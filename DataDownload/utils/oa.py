@@ -105,9 +105,25 @@ class dataCollector:
         self.atl08 = pd.DataFrame(data['series'][0]['lat_lon_elev_canopy'], columns = ['lat','lon','h','canopy'])
         if verbose:
             print(' Done.')
+            
+            print('---> requesting ATL12 data...',end='')
+        product = 'atl12'
+        request_url = self.url.replace('atlXX',product)
+        data = requests.get(request_url).json()
+        self.atl12 = pd.DataFrame(data['series'][0]['lat_lon_elev'], columns = ['lat','lon','h'])
+        if verbose:
+            print(' Done.')
+
+            print('---> requesting ATL13 data...',end='')
+        product = 'atl13'
+        request_url = self.url.replace('atlXX',product)
+        data = requests.get(request_url).json()
+        self.atl13 = pd.DataFrame(data['series'][0]['lat_lon_elev'], columns = ['lat','lon','h'])
+        if verbose:
+            print(' Done.')
     
     ################################################################################################ 
-    def plotData(self,ax=None,title='some Data I found on OpenAltimetry'):
+    def plotData(self,ax=None,title='OpenAltimetry'):
 
         # get data if not already there
         if 'atl03' not in vars(self).keys(): 
@@ -122,12 +138,14 @@ class dataCollector:
         atl03 = ax.scatter(self.atl03.lat, self.atl03.h, s=2, color='black', alpha=0.2, label='ATL03')
         atl06, = ax.plot(self.atl06.lat, self.atl06.h, label='ATL06')
         atl08, = ax.plot(self.atl08.lat, self.atl08.h, label='ATL08', linestyle='--')
+        atl12, = ax.plot(self.atl12.lat, self.atl12.h, label='ATL12', color='blue', linestyle='--')
+        atl13, = ax.plot(self.atl13.lat, self.atl13.h, label='ATL13', color='red', linestyle='--')
 
         heights = self.atl03.h[self.atl03.conf != 'Noise']
         y_min1 = np.min(heights)
         y_max1 = np.max(heights)
-        maxprods = np.nanmax((self.atl06.h.max(), self.atl08.h.max()))
-        minprods = np.nanmin((self.atl06.h.min(), self.atl08.h.min()))
+        maxprods = np.nanmax((self.atl06.h.max(), self.atl08.h.max(), self.atl12.h.max(), self.atl13.h.max()))
+        minprods = np.nanmin((self.atl06.h.min(), self.atl08.h.min(), self.atl12.h.min(), self.atl13.h.min()))
         hrange = maxprods - minprods
         y_min2 = minprods - hrange * 0.5
         y_max2 = maxprods + hrange * 0.5
