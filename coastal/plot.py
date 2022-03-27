@@ -6,7 +6,7 @@ Plotting helpers.
 import matplotlib.pyplot as plt
 import numpy as np
 
-from oa import dataCollector
+from coastal.oa import dataCollector
 
 
 def plot_atl08(df, figsize=None):
