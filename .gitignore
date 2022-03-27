@@ -1,3 +1,7 @@
 *-checkpoint*
-contributors/Eli_Holmes/utils/__pycache__/oa.cpython-39.pyc
-contributors/NoelleHelder/utils/__pycache__/oa.cpython-39.pyc
+*.pyc
+*.DS_Store
+_build
+_static
+_templates
+.idea
