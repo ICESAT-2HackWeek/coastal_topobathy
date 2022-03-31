@@ -23,10 +23,19 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'autoapi.extension',
+    'myst_nb',
 ]
 
 autoapi_type = 'python'
 autoapi_dirs = ['../../coastal']
+
+source_suffix = {
+    # Note, put .rst first so that API docs are linked properly
+    ".rst": "restructuredtext",
+    ".ipynb": "myst-nb",
+    ".txt": "myst-nb",
+    ".md": "myst-nb",
+}
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
