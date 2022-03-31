@@ -16,10 +16,10 @@ This page documents our functions and examples.
    :hidden:
    :caption: Examples
 
-   ../../examples/AK_topobathy_vis.ipynb
-   ../../examples/OpenAltimetry_example
-   ../../examples/SlideRule_example
-   ../../examples/SlideRule_getData
+   examples/AK_topobathy_vis
+   examples/OpenAltimetry_example
+   examples/SlideRule_example
+   examples/SlideRule_getData
 
 .. toctree::
    :hidden:
