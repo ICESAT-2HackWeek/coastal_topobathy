@@ -3,9 +3,6 @@ Welcome to Coastal Topobathy!
 
 This page documents our functions and examples.
 
-.. note::
-
-   This project is under active development.
 
 
 .. toctree::
