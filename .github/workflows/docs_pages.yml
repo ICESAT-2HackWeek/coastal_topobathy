@@ -27,6 +27,7 @@ jobs:
           python -m pip install -U sphinx
           python -m pip install sphinx-rtd-theme
           python -m pip install sphinx-autoapi
+          python -m pip install myst-nb
 
       - name: make the sphinx docs
         run: |
