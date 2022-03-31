@@ -17,5 +17,4 @@ Team project aimed at extracting sections of tracklines, and identifying bathyme
 * Participant: Cecilia Peralta-Ferriz
 * Participant: Bruno Belotti
 * Participant: Matthew Paris
-* 
 
