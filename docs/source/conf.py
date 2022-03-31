@@ -23,7 +23,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'autoapi.extension',
-    'myst-nb',
+    'myst_nb',
 ]
 
 autoapi_type = 'python'
