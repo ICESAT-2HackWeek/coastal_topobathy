@@ -28,10 +28,13 @@ jobs:
           python -m pip install sphinx-rtd-theme
           python -m pip install sphinx-autoapi
           python -m pip install myst-nb
+          python -m pip3 install jupyter
+          python -m pip install nbconvert
 
       - name: make the sphinx docs
         run: |
           cp -rT examples docs/source
+          jupyter nbconvert --to markdown docs/source/examples/*
           make -C docs clean 
           make -C docs html
 
