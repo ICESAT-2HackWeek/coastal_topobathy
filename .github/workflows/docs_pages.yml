@@ -37,7 +37,7 @@ jobs:
       - name: convert the notebooks to markdown
         run: |
           cp -R examples docs/source
-          jupyter nbconvert --to markdown docs/source/examples/*
+          jupyter nbconvert --to markdown docs/source/examples/*.ipynb
 
       - name: make the sphinx docs
         run: |
