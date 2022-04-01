@@ -28,13 +28,19 @@ jobs:
           python -m pip install sphinx-rtd-theme
           python -m pip install sphinx-autoapi
           python -m pip install myst-nb
+          python -m pip3 install jupyter
+          python -m pip install nbconvert
 
       - name: Switch to the refactoring branch
         run: git checkout refactoring
 
-      - name: make the sphinx docs
+      - name: convert the notebooks to markdown
         run: |
           cp -rT examples docs/source
+          jupyter nbconvert --to markdown docs/source/examples/*
+
+      - name: make the sphinx docs
+        run: |
           make -C docs clean 
           make -C docs html
         
