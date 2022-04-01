@@ -31,10 +31,16 @@ jobs:
           python -m pip3 install jupyter
           python -m pip install nbconvert
 
-      - name: make the sphinx docs
+       - name: Switch to the refactoring branch
+        run: git checkout refactoring
+
+      - name: convert the notebooks to markdown
         run: |
           cp -rT examples docs/source
           jupyter nbconvert --to markdown docs/source/examples/*
+
+     - name: make the sphinx docs
+        run: |
           make -C docs clean 
           make -C docs html
 
