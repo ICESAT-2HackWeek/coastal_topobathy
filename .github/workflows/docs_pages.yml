@@ -4,7 +4,7 @@ name: docs_pages_workflow
 on:
   push:
     branches:    
-      - refactoring
+      - main
  
 jobs:
  
@@ -31,8 +31,8 @@ jobs:
           python -m pip install jupyter
           python -m pip install nbconvert
 
-      - name: Switch to the refactoring branch
-        run: git checkout refactoring
+#      - name: Switch to the refactoring branch
+#        run: git checkout refactoring
 
       - name: convert the notebooks to markdown
         run: |
