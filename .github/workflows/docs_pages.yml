@@ -43,7 +43,7 @@ jobs:
         run: |
           make -C docs clean 
           make -C docs html
-
+          
       - name: Init new repo in dist folder and commit generated files
         run: |
           cd docs/build/html/
