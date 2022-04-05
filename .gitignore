@@ -5,3 +5,4 @@ _build
 _static
 .idea
 .Rproj.user
+_templates
