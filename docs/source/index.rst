@@ -10,6 +10,11 @@ This page documents our functions and examples.
 
    usage
    contribute
+   
+.. toctree::
+   :hidden:
+   
+   autoapi/index
 
 .. toctree::
    :maxdepth: 1
@@ -21,4 +26,3 @@ This page documents our functions and examples.
    examples/SlideRule_example
    examples/SlideRule_getData
    
-.. to add the auto api add ```toctree::`` and    ``autoapi/index`` with spacing like above
