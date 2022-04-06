@@ -21,6 +21,17 @@ This page documents our functions and examples.
    examples/SlideRule_example
    examples/SlideRule_getData
    
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Functions
+   
+   autoapi/index
+   genindex
+   
+   
+
+   
 .. the autoapi entry is in docs/source/_templates/layout.html and autoapi_add_toctree_entry = False in the conf.py
 
 .. the links you see in sidebar are also set up in docs/source/_templates/layout.html
