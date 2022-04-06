@@ -3,8 +3,6 @@ Welcome to Coastal Topobathy!
 
 This page documents our functions and examples.
 
-
-
 .. toctree::
    :hidden:
 
@@ -28,9 +26,6 @@ This page documents our functions and examples.
    
    autoapi/index
    genindex
-   
-   
-
    
 .. the autoapi entry is in docs/source/_templates/layout.html and autoapi_add_toctree_entry = False in the conf.py
 
