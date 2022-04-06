@@ -25,9 +25,8 @@ This page documents our functions and examples.
    :caption: Functions
    
    autoapi/index
-   genindex
    
-.. the autoapi entry is in docs/source/_templates/layout.html and autoapi_add_toctree_entry = False in the conf.py
+.. the index link is being added in docs/source/_templates/layout.html. adding genindex here didn't work.
 
 .. the links you see in sidebar are also set up in docs/source/_templates/layout.html
    
