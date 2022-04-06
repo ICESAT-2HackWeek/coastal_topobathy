@@ -1,0 +1,34 @@
+:py:mod:`coastal.beam`
+======================
+
+.. py:module:: coastal.beam
+
+.. autoapi-nested-parse::
+
+   Tools for beam manipulation.
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   coastal.beam.reduce_dataframe
+
+
+
+.. py:function:: reduce_dataframe(gdf, rgt=None, gt=None, track=None, pair=None, cycle=None, beam='', crs=4326)
+
+   Reduce GeoDataFrame to plot a single beam.
+   This function is goint to subset the geodataframe. Since we had a span of
+   dates, there are multiple dates (and beams). This function will also set the
+   CRS (map projection).
+
+   Refactored from DataDownload/SlideRule_example.ipynb by @eeholmes
+
+

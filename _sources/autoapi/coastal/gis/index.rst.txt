@@ -1,0 +1,36 @@
+:py:mod:`coastal.gis`
+=====================
+
+.. py:module:: coastal.gis
+
+.. autoapi-nested-parse::
+
+   Generic GIS tools.
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   coastal.gis.deg2rad
+   coastal.gis.dist_latlon2meters
+
+
+
+.. py:function:: deg2rad(deg)
+
+
+.. py:function:: dist_latlon2meters(lat1, lon1, lat2, lon2)
+
+   Returns the distance between two coordinate points - (lon1, lat1) and (lon2, lat2) along the earth's surface in
+   meters.
+
+   Refactored from contributors/NoelleHelder/AK_topobathy_vis.ipynb by @nkhelder
+
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>How to contribute &mdash; Coastal 0.1 documentation</title>
+    
+
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/mystnb.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="News" href="news.html" />
+    <link rel="prev" title="Usage" href="usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Coastal
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#changing-the-documentation">Changing the documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="examples/AK_topobathy_vis.html">USACE topobathy vis with Google Earth Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/OpenAltimetry_example.html">Comparison ATL03, ATL08, ATL12, and ATL13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/SlideRule_example.html">ICESat-2 ATL03 SlideRule Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/SlideRule_getData.html">Slide Rule example</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Functions</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="autoapi/index.html">Reference</a></li>
+</ul>
+
+        <ul>
+            <li class="toctree-l1"><a href= "genindex.html">Index</a></li>
+<!--    <li class="toctree-l1"><a href= "py-modindex.html">Module Index</a></li> -->
+    </ul>
+
+    
+        <p class="caption">
+            <span class="caption-text">External links</span>
+        </p>
+        <ul>
+            
+                <li class="toctree-l1"><a href="https://github.com/ICESAT-2HackWeek/coastal_topobathy"><i class="fa fa-github fa-fw"></i> Source Code</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/ICESAT-2HackWeek/coastal_topobathy/blob/main/LICENSE"><i class="fa fa-book fa-fw"></i> License</a></li>
+            
+        </ul>
+    
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Coastal</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>How to contribute</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-contribute">
+<h1>How to contribute<a class="headerlink" href="#how-to-contribute" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Use our Slack channel ICESat2 - Coastal or GitHub issues to suggest new things we might work on or changes to our repo.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">contributors</span></code> directory to add notebooks or try out ideas. You can use the <code class="docutils literal notranslate"><span class="pre">examples</span></code> notebooks as templates.</p></li>
+<li><p>Add an issue if you make a function or notebook that you think would be good to incorporate into <code class="docutils literal notranslate"><span class="pre">coastal</span></code> or <code class="docutils literal notranslate"><span class="pre">examples</span></code> but don’t want to do that yourself.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">coastal</span></code> directory: Here we have functions that can be used across our examples. Please add a documentation header to your functions. See existing functions for examples. We are using the [numpy documentation style guide](<a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">https://numpydoc.readthedocs.io/en/latest/format.html</a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">examples</span></code> directory: Here we have notebooks that work fully through an example. Note after adding an example, you need to edit <code class="docutils literal notranslate"><span class="pre">docs/source/index.rst</span></code> and add it so that it shows up in the docs.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docs</span></code> directory: This is the code that used to generate the landing page <a class="reference external" href="https://icesat-2hackweek.github.io/coastal_topobathy/">https://icesat-2hackweek.github.io/coastal_topobathy/</a>. If you want to update a page to the docs it goes here. You can also post an issue with the suggested change/addition, if you don’t want to go into <code class="docutils literal notranslate"><span class="pre">docs</span></code> yourself.</p></li>
+</ul>
+<section id="changing-the-documentation">
+<h2>Changing the documentation<a class="headerlink" href="#changing-the-documentation" title="Permalink to this headline"></a></h2>
+<p>The documentation pages are generated automatically when you push content to the repo (main branch) to the <code class="docutils literal notranslate"><span class="pre">coastal</span></code> or <code class="docutils literal notranslate"><span class="pre">examples</span></code> folders, with the caveat that if you add an example you also need to edit <code class="docutils literal notranslate"><span class="pre">docs/source/index.rst</span></code> and add it to the list of examples so that it shows up in the docs.
+If you want to edit the documentation layout. Here is what you need to know. Everything you want is in <code class="docutils literal notranslate"><span class="pre">docs/source</span></code>.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>To add a new page to the side-bar:</dt><dd><ul>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">.rst</span></code> file to <cite>source</cite>.</p></li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> and add where you want it. It’ll be obvious when you open <code class="docutils literal notranslate"><span class="pre">index.rst</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>To add a new example:</dt><dd><ul>
+<li><p>After adding the notebook to <code class="docutils literal notranslate"><span class="pre">examples</span></code>, add the example to the examples section in <code class="docutils literal notranslate"><span class="pre">index.rst</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>To add move info to an existing page:</dt><dd><ul>
+<li><p>Just edit that <code class="docutils literal notranslate"><span class="pre">.rst</span></code> file in <code class="docutils literal notranslate"><span class="pre">docs/source</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>To change the look of the side bar</dt><dd><ul>
+<li><p><em>Is it part of Index or API or Links?</em> Look in <code class="docutils literal notranslate"><span class="pre">source/_templates/layouts.html</span></code>. You’ll see the code for add/edit that there.</p></li>
+<li><p><em>Is it examples or the main pages?</em> Look in <code class="docutils literal notranslate"><span class="pre">source/index.rst</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Where is the html and how is it created?</dt><dd><ul>
+<li><p>It is on the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch and GitHub Pages is set to build the docs off of that branch.</p></li>
+<li><p>The html is being created by <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> using the makefile in <code class="docutils literal notranslate"><span class="pre">docs</span></code> and <code class="docutils literal notranslate"><span class="pre">docs/source/conf.py</span></code></p></li>
+<li><p><em>Want to futz with the Sphinx part?</em> Edit <code class="docutils literal notranslate"><span class="pre">docs/source/conf.py</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>What triggers the docs build?</dt><dd><ul>
+<li><p>A GitHub Action  <code class="docutils literal notranslate"><span class="pre">.github/workflows/docs_pages.yml</span></code> is what is running sphinx and some other stuff.</p></li>
+<li><p><em>How are the examples notebooks getting converted to markdown?</em> That’s happening in the <code class="docutils literal notranslate"><span class="pre">docs_pages.yml</span></code> via <code class="docutils literal notranslate"><span class="pre">nbconvert</span></code> though we may switch to <code class="docutils literal notranslate"><span class="pre">jupytext</span></code>.</p></li>
+<li><p><em>Are the examples notebooks getting executed to make the markdown?</em> No. They do have ipyleaflet widgets so we have to save the widget state so the ipyleaflet plots show up.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>How is the API references generated from the code?</dt><dd><ul>
+<li><p><a class="reference external" href="https://sphinx-autoapi.readthedocs.io/">sphinx-autoapi</a> extension is being used. I had changed the <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> template for <code class="docutils literal notranslate"><span class="pre">autoapi</span></code> to get to change the title to Reference instead of API Reference.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="news.html" class="btn btn-neutral float-right" title="News" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

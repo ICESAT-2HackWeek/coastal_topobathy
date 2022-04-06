@@ -1,0 +1,37 @@
+:py:mod:`coastal.oa`
+====================
+
+.. py:module:: coastal.oa
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   coastal.oa.dataCollector
+
+
+
+
+.. py:class:: dataCollector(beam=None, oaurl=None, track=None, date=None, latlims=None, lonlims=None, verbose=False)
+
+   .. py:method:: requestData(self, verbose=False)
+
+
+   .. py:method:: plotData(self, ax=None, title='OpenAltimetry')
+
+
+   .. py:method:: plotData_hv(self)
+
+
+   .. py:method:: makeGEEmap(self, days_buffer=25)
+
+
+   .. py:method:: plotDataAndMap(self, scene_id, crs='EPSG:3857', title='ICESat-2 Data')
+
+
+

@@ -1,0 +1,12 @@
+Reference
+=============
+
+This page contains auto-generated API reference documentation [#f1]_.
+
+.. toctree::
+   :maxdepth:1
+   :titlesonly:
+
+   /autoapi/coastal/index
+
+.. [#f1] Created with `sphinx-autoapi <https://github.com/readthedocs/sphinx-autoapi>`_

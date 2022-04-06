@@ -1,0 +1,18 @@
+:py:mod:`coastal`
+=================
+
+.. py:module:: coastal
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   beam/index.rst
+   gis/index.rst
+   oa/index.rst
+   plot/index.rst
+
+

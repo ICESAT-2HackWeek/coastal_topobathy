@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>coastal.plot &mdash; Coastal 0.1 documentation</title>
+    
+
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/mystnb.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="prev" title="coastal.oa" href="../oa/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> Coastal
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contribute.html">How to contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../news.html">News</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/AK_topobathy_vis.html">USACE topobathy vis with Google Earth Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/OpenAltimetry_example.html">Comparison ATL03, ATL08, ATL12, and ATL13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/SlideRule_example.html">ICESat-2 ATL03 SlideRule Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/SlideRule_getData.html">Slide Rule example</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Functions</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">coastal</span></code></a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../beam/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">coastal.beam</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../gis/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">coastal.gis</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../oa/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">coastal.oa</span></code></a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">coastal.plot</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        <ul>
+            <li class="toctree-l1"><a href= "../../../genindex.html">Index</a></li>
+<!--    <li class="toctree-l1"><a href= "../../../py-modindex.html">Module Index</a></li> -->
+    </ul>
+
+    
+        <p class="caption">
+            <span class="caption-text">External links</span>
+        </p>
+        <ul>
+            
+                <li class="toctree-l1"><a href="https://github.com/ICESAT-2HackWeek/coastal_topobathy"><i class="fa fa-github fa-fw"></i> Source Code</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/ICESAT-2HackWeek/coastal_topobathy/blob/main/LICENSE"><i class="fa fa-book fa-fw"></i> License</a></li>
+            
+        </ul>
+    
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Coastal</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">Reference</a> &raquo;</li>
+          <li><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">coastal</span></code></a> &raquo;</li>
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">coastal.plot</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-coastal.plot">
+<span id="coastal-plot"></span><h1><a class="reference internal" href="#module-coastal.plot" title="coastal.plot"><code class="xref py py-mod docutils literal notranslate"><span class="pre">coastal.plot</span></code></a><a class="headerlink" href="#module-coastal.plot" title="Permalink to this headline"></a></h1>
+<p>Plotting helpers.</p>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline"></a></h2>
+<section id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h3>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#coastal.plot.plot_atl08" title="coastal.plot.plot_atl08"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_atl08</span></code></a>(df, figsize=None)</p></td>
+<td><p>Plot the ATL08 classifications.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#coastal.plot.plot_yapc" title="coastal.plot.plot_yapc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_yapc</span></code></a>(df, vmin=100, vmax=255, figsize=None)</p></td>
+<td><p>YAPC classifications.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#coastal.plot.plot_from_oa_url" title="coastal.plot.plot_from_oa_url"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_from_oa_url</span></code></a>(gtx, url=None, latlims=None, lonlims=None, rgt=None, date=None, title='ICESat-2 Data', verbose=False)</p></td>
+<td><p>Download and plot from OpenAltimetry.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py function">
+<dt class="sig sig-object py" id="coastal.plot.plot_atl08">
+<span class="sig-prename descclassname"><span class="pre">coastal.plot.</span></span><span class="sig-name descname"><span class="pre">plot_atl08</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coastal.plot.plot_atl08" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the ATL08 classifications.</p>
+<p>Refactored from DataDownload/SlideRule_example.ipynb by &#64;eeholmes</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coastal.plot.plot_yapc">
+<span class="sig-prename descclassname"><span class="pre">coastal.plot.</span></span><span class="sig-name descname"><span class="pre">plot_yapc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">255</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coastal.plot.plot_yapc" title="Permalink to this definition"></a></dt>
+<dd><p>YAPC classifications.</p>
+<p>Refactored from DataDownload/SlideRule_example.ipynb by &#64;eeholmes</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coastal.plot.plot_from_oa_url">
+<span class="sig-prename descclassname"><span class="pre">coastal.plot.</span></span><span class="sig-name descname"><span class="pre">plot_from_oa_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gtx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latlims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lonlims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rgt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ICESat-2</span> <span class="pre">Data'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coastal.plot.plot_from_oa_url" title="Permalink to this definition"></a></dt>
+<dd><p>Download and plot from OpenAltimetry.</p>
+<p>Refactored from DataDownload/OpenAltimetry_example.ipynb by &#64;eeholmes</p>
+<p>Get data URL from the OpenAltimetry API
+* Go to [openaltimetry.org](<a class="reference external" href="https://openaltimetry.org/">https://openaltimetry.org/</a>)
+* Select <strong>BROWSE ICESAT-2 DATA</strong>.
+* Select <strong>ATL 08</strong> on the left
+* Select a date
+* Click <strong>SELECT A REGION</strong> on the top left, and drew a rectangle
+* Right click on the rectangle and select <strong>View Elevation profile</strong>. This opens a pop up, and shows ATL06 and</p>
+<blockquote>
+<div><p>ATL08 elevations.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Scroll to the <strong>bottom</strong> and select <strong>Get API URL</strong>. Copy it.</p></li>
+</ul>
+<p>Note, we don’t need EarthData credentials for this.</p>
+<p>Alternatively, we could use a date, track number, beam, and lat/lon bounding box as input to the <cite>dataCollector</cite>.</p>
+<dl class="simple">
+<dt>gtx<span class="classifier">str</span></dt><dd><p>Beam to look for. E.g., ‘gt1r’ or ‘gt2r’.</p>
+</dd>
+<dt>url<span class="classifier">str, optional</span></dt><dd><p>OpenAltimetry API URL. Required if the search parameters are not provided.</p>
+</dd>
+<dt>latlims<span class="classifier">list, optional</span></dt><dd><p>Latitude limits for the boundary box.</p>
+</dd>
+<dt>lonlims<span class="classifier">list, optional</span></dt><dd><p>Longitude limits for the boundary box.</p>
+</dd>
+<dt>rgt<span class="classifier">int, optional</span></dt><dd><p>Track number</p>
+</dd>
+<dt>date<span class="classifier">str, optional</span></dt><dd><p>Date to look for. Use ‘YYYY-MM-DD’.</p>
+</dd>
+<dt>title<span class="classifier">str, optional</span></dt><dd><p>Plot title.</p>
+</dd>
+<dt>verbose<span class="classifier">bool, default False</span></dt><dd><p>Controls verbosity of the data collection process.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>myplot<span class="classifier">plt.Figure</span></dt><dd><p>Handle for the resulting plot.</p>
+</dd>
+<dt>mydata<span class="classifier">pd.DataFrame</span></dt><dd><p>Downloaded data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../oa/index.html" class="btn btn-neutral float-left" title="coastal.oa" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

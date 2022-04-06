@@ -1,0 +1,88 @@
+:py:mod:`coastal.plot`
+======================
+
+.. py:module:: coastal.plot
+
+.. autoapi-nested-parse::
+
+   Plotting helpers.
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   coastal.plot.plot_atl08
+   coastal.plot.plot_yapc
+   coastal.plot.plot_from_oa_url
+
+
+
+.. py:function:: plot_atl08(df, figsize=None)
+
+   Plot the ATL08 classifications.
+
+   Refactored from DataDownload/SlideRule_example.ipynb by @eeholmes
+
+
+.. py:function:: plot_yapc(df, vmin=100, vmax=255, figsize=None)
+
+   YAPC classifications.
+
+   Refactored from DataDownload/SlideRule_example.ipynb by @eeholmes
+
+
+.. py:function:: plot_from_oa_url(gtx, url=None, latlims=None, lonlims=None, rgt=None, date=None, title='ICESat-2 Data', verbose=False)
+
+   Download and plot from OpenAltimetry.
+
+   Refactored from DataDownload/OpenAltimetry_example.ipynb by @eeholmes
+
+   Get data URL from the OpenAltimetry API
+   * Go to [openaltimetry.org](https://openaltimetry.org/)
+   * Select **BROWSE ICESAT-2 DATA**.
+   * Select **ATL 08** on the left
+   * Select a date
+   * Click **SELECT A REGION** on the top left, and drew a rectangle
+   * Right click on the rectangle and select **View Elevation profile**. This opens a pop up, and shows ATL06 and
+       ATL08 elevations.
+   * Scroll to the **bottom** and select **Get API URL**. Copy it.
+
+   Note, we don't need EarthData credentials for this.
+
+   Alternatively, we could use a date, track number, beam, and lat/lon bounding box as input to the `dataCollector`.
+
+   Parameters
+   ----------
+   gtx : str
+       Beam to look for. E.g., 'gt1r' or 'gt2r'.
+   url : str, optional
+       OpenAltimetry API URL. Required if the search parameters are not provided.
+   latlims : list, optional
+       Latitude limits for the boundary box.
+   lonlims : list, optional
+       Longitude limits for the boundary box.
+   rgt : int, optional
+       Track number
+   date : str, optional
+       Date to look for. Use 'YYYY-MM-DD'.
+   title : str, optional
+       Plot title.
+   verbose : bool, default False
+       Controls verbosity of the data collection process.
+
+   Returns
+   -------
+   myplot : plt.Figure
+       Handle for the resulting plot.
+   mydata : pd.DataFrame
+       Downloaded data.
+
+
+
