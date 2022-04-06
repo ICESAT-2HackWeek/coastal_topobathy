@@ -30,6 +30,7 @@ extensions = [
 
 autoapi_type = 'python'
 autoapi_dirs = ['../../coastal']
+autoapi_add_toctree_entry = False
 
 source_suffix = {
     # Note, put .rst first so that API docs are linked properly
