@@ -21,10 +21,4 @@ This page documents our functions and examples.
    examples/SlideRule_example
    examples/SlideRule_getData
 
-.. 
-   .. toctree::
-      :hidden:
-      :maxdepth: 1
-
-      autoapi/index
    
