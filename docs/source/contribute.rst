@@ -33,5 +33,5 @@ If you want to edit the documentation layout. Here is what you need to know. Eve
     * *How are the examples notebooks getting converted to markdown?* That's happening in the ``docs_pages.yml`` via ``nbconvert`` though we may switch to ``jupytext``.
     * *Are the examples notebooks getting executed to make the markdown?* No. They do have ipyleaflet widgets so we have to save the widget state so the ipyleaflet plots show up.
 * How is the API references generated from the code?
-    * `sphinx-autoapi <https://sphinx-autoapi.readthedocs.io/>`_ extension is being used. I had to had to hack the ``index.rst`` template for ``autoapi`` to get it to not put the api ref in the toc.
+    * `sphinx-autoapi <https://sphinx-autoapi.readthedocs.io/>`_ extension is being used. I had to hack the ``index.rst`` template for ``autoapi`` to get it to not to put the api link in the sidebar.
 
