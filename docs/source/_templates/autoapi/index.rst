@@ -5,7 +5,6 @@ This page contains auto-generated API reference documentation [#f1]_.
 
 .. toctree::
    :titlesonly:
-   :hidden:
 
    {% for page in pages %}
    {% if page.top_level_object and page.display %}
