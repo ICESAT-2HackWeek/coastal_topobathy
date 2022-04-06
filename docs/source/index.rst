@@ -21,3 +21,7 @@ This page documents our functions and examples.
    examples/SlideRule_example
    examples/SlideRule_getData
    
+.. the autoapi entry is in docs/source/_templates/layout.html and autoapi_add_toctree_entry = False in the conf.py
+
+.. the links you see in sidebar are also set up in docs/source/_templates/layout.html
+   
