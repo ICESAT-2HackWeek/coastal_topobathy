@@ -20,5 +20,5 @@ This page documents our functions and examples.
    examples/OpenAltimetry_example
    examples/SlideRule_example
    examples/SlideRule_getData
-
    
+.. to add the auto api add ```toctree::`` and    ``autoapi/index`` with spacing like above
