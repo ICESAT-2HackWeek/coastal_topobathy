@@ -8,6 +8,7 @@ This page documents our functions and examples.
 
    usage
    contribute
+   news
    
 .. toctree::
    :maxdepth: 1
