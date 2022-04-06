@@ -12,11 +12,6 @@ This page documents our functions and examples.
    contribute
    
 .. toctree::
-   :hidden:
-   
-   autoapi/index
-
-.. toctree::
    :maxdepth: 1
    :hidden:
    :caption: Examples
