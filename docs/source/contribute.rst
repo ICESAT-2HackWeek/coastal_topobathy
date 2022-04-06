@@ -8,8 +8,8 @@ How to contribute
 * ``examples`` directory: Here we have notebooks that work fully through an example. Note after adding an example, you need to edit ``docs/source/index.rst`` and add it so that it shows up in the docs.
 * ``docs`` directory: This is the code that used to generate the landing page https://icesat-2hackweek.github.io/coastal_topobathy/. If you want to update a page to the docs it goes here. You can also post an issue with the suggested change/addition, if you don't want to go into ``docs`` yourself. 
 
-Changing the documentation (what you are reading right now)
-=================
+Changing the documentation
+---------------------
 
 The documentation pages are generated automatically when you push content to the repo (main branch) to the ``coastal`` or ``examples`` folders, with the caveat that if you add an example you also need to edit ``docs/source/index.rst`` and add it to the list of examples so that it shows up in the docs.
 If you want to edit the documentation layout. Here is what you need to know. Everything you want is in ``docs/source``.
